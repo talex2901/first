@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content= "Hello, my first page, vladilen course">
     <meta name="description" content="Привет, это моя первая страница в интернете. 
     Здесь я буду практикаваться и изучать основы создания сайтов">
+    <link rel="stylesheet" href="01_SCC.css">
     <title>мой первый сайт</title>
 </head>
 <body>
+    <div class="container">
+    <header id="header" style="color: rgb(71, 80, 80);">
  <h1>Алексей</h1> 
- <img src="images/photo_1.jpg" width="550" alt="Тут могла быть ваша реклама XD"> 
-  <p>Я давно мечтал этому научится, <strong><em>почему я не сделал этого раньше?</em></strong> </p> 
+</header>
+<div class="hair">
+<p class="image">
+ <img src="images/photo_1.jpg" class="myPhoto" width="550" alt="Тут могла быть ваша реклама XD"> 
+</p>
+  <div class="block">
+    Я давно мечтал этому научится, <strong><em>почему я не сделал этого раньше?</em></strong> </p> 
   <p>Возможно я просто не натыкался на канал Владилена, но потеренного времени жаль</p>
-<p>соц сети:</p>
+</div>
+</div>
+<div class="adress">
+<p>Cоц сети:</p>
 <br> 
-<a href="https://vk.com/lexataranuk">VK</a>  
-<a href="https://t.me/talex29">Telegram</a> 
+<a href="https://vk.com/lexataranuk" class="site">VK</a>  /
+<a href="https://t.me/talex29" class="site">Telegram</a> 
 <p>
+</div>
+<div class="hobby">
     <h1>
         Мои Хобби:
     </h1>
@@ -29,12 +42,11 @@
         <li>JavaScript</li>
         <li>HTML&CSS</li>
     </Ol>
-</p>
+</div>
 <br>
-<p>
+<div class="work">
     <h1>Опыт работы</h1>
-</p>
-<table>
+<table class="workTable">
     <thead>
         <tr>
             <th>Компания</th>
@@ -43,44 +55,48 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="resume-1">
             <td>Интерпаб</td>
             <td>2016-2018</td>
             <td>Официант</td>
         </tr>
-        <tr>
+        <tr class="resume-2">
             <td>ВкусВилл</td>
             <td>2019-2021</td>
             <td>Старший продавец</td>
         </tr>
-        <tr>
+        <tr class="resume-3">
             <td>ОЗОН</td>
             <td>2021-Н.В</td>
             <td>Администратор Производства</td>
         </tr>
     </tbody>
 </table>
-
+</div>
+<div class="fedback">
 <P>
     <h1>Связаться со мной</h1>
 </P>
 
-<form>
-    <div>
+<form class="form">
+    <div class="formRow">
+    <div class="formGroup">
         <label for="Name" >Ваше имя</label>
         <input type="text" id="Name" placeholder="Иван">
     </div>
-    <div>
+    <div class="formGroup">
         <label for="Email" >Ваш Эмейл*</label>
         <input type="email" id="Email" placeholder="вашапочта@почта.ru">
     </div>
-    <div>
+</div>
+<div class="formTel">
+    <div class="formGroup">
         <label for="tel">Ваш телефон*</label>
         <input type="tel" id="tel" name="tel"
        pattern="[+7]{2}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" value="+7" placeholder="+79*********"
        required>
     </div>
-    <div>
+    <div class="formGroup">
         <label for="sex">Ваш пол*</label>
         <select>
             <option value="Mele">Мужчина</option>
@@ -88,18 +104,17 @@
             <option value="AttackHelicopter">Боевой Ветолет</option>
         </select>
     </div>
-    
-    <div>
+</div>
+    <div class="formGroup">
         <label for="message" >Сообщение</label>
-        <br>
         <textarea id="message" cols="50" rows="10" placeholder="Опишите в чем дело..."></textarea>
     </div>
-    <Button type="Submit">Отправить</Button>
+    <Button class="btn" type="Submit">✉ Отправить</Button>
 
 
 </form>
-
-
-
+</div>
+</div>
+<br>
 </body>
 </html>

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 750px;
+    margin: auto;
+    
+}
+body {
+    background: #f6f6f6;
+    font-family: lobster, verdana, sans-serif; 
+    font-size: 20px;
+    font-weight: lighter;
+    color: #0f141e;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.image {
+/* background: #fdf8df; */
+/* padding: 10px; */
+margin-bottom: 10px;
+/* border: 1px solid #fdf8df; */
+/* border-radius: 10px; */
+/* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); */
+padding-right: 10px;
+}
+.rabota td{
+    width: 100%;
+}
+
+.adress {
+    background: #f6f6f6;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px; 
+    border: 2px solid #f6f6f6; 
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.block {
+    /* background: #ebfae9; */
+    font-family: roboto, sans-serif;
+    margin-bottom: 10px; 
+    /* border: 2px solid #ebfae9; */
+    /* border-radius: 10px; */
+    /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); */
+    padding: 20px;
+} 
+.fedback {
+    /* background: transparent; */
+    /* margin-bottom: 10px;  */
+    /* border: 2px solid #ebfae9; */
+    /* border-radius: 10px; */
+    /* box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); */
+    /* padding-left: 20px; */
+    /* padding-bottom: 20px; */
+}
+.hobby {
+    background: #ebfae9;
+    border: 2px solid #ebfae9;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+
+}
+.work {
+    background: #ebfae9;
+    margin-bottom: 10px; 
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    /* padding-left: 20px; */
+    /* padding-bottom: 20px; */
+    /* width: 100%; */
+    text-decoration: solid;
+    padding: 20px;
+}
+.work th {
+    border: 2px solid black;
+    border-bottom: 2px dashed black;
+    border-left: none;
+    border-right: none;
+}
+.work tr:nth-child(even) {
+ background: rgb(255, 255, 255);   
+}
+.work td {
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: 2px dashed black;
+    border-left: none;
+    border-right: none;
+}
+.work td:last-child {
+    border-right: 2px solid black;
+    
+}
+.work td:first-child {
+    border-left: 2px solid black;
+}
+.work th:last-child {
+    border-right: 2px solid black;
+    
+}
+.work th:first-child {
+    border-left: 2px solid black;
+}
+.workTable {
+    width: 100%;
+    padding: 20px;
+}
+.work td:hover {
+    background: #9c9c9c;
+    
+}
+.myPhoto {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25)
+}
+.btn {
+padding: 5px;
+background: darkgray;
+border: none;
+cursor: pointer;
+border-radius: 10px;    
+}
+
+.btn:hover {
+opacity: 0.8;
+color: #ebfae9;
+background: #0f141e;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    background: #27a3e2;
+ text-decoration: underline ;
+}
+.site {
+    cursor: pointer;
+    background: #0b7bf7;
+    color: #f7f7f7;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.fedback h1{
+    text-align: center;
+}
+.formGroup label{
+display: block;
+color: #797575;
+font-size: 13px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.formGroup input, .formGroup textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0px 10px;
+    outline: none;
+}
+.formRow .formGroup {
+    display: inline-block;
+    /* margin-right: 20px; */
+    width: 50%;
+}
+.formRow {
+    display: flex;
+}
+.formTel {
+    display: flex;
+}
+.formTel .formGroup {
+    display: inline-block;
+    width: 50%;
+}
+.hair {
+    display: flex;
+    background: #ebfae9;
+    font-family: roboto, sans-serif;
+    margin-bottom: 10px; 
+    border: 2px solid #ebfae9;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+
+    } 
+@media (max-width: 500px){
+.hair {
+  display: block;
+}
+
+.block {
+padding: 10px;
+text-align: center;
+}
+.formRow {
+    display: block;
+}
+.formTel {
+    display: block;
+}
+.formRow .formGroup {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.formTel .formGroup {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+}
